@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tap="http://rs.tdwg.org/tapir/1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:hyam="http://hyam.net/tapir2sw#"
+    xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:dwcc="http://rs.tdwg.org/dwc/curatorial/"
+    xmlns:dc="http://purl.org/dc/terms/" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+    <!--This is metadata about this metadata document-->
+    <rdf:Description rdf:about="http://herbarium.bgbm.org/data/rdf/BGT0000287">
+        <dc:creator>Simple PHP RDF Script implemented by Felix Hilgerdenaar (BGBM)</dc:creator>
+        <dc:created>2014-06-06T14:21:47+02:00</dc:created>
+
+
+    </rdf:Description>
+
+
+    <!--This is metadata about this specimen-->
+    <rdf:Description rdf:about="http://herbarium.bgbm.org/object/BGT0000287">
+
+        <!-- Assertions made in simple Dublin Core -->
+
+        <dc:title>Euphorbia cyparissias L.</dc:title>
+
+        <dc:description>A herbarium specimen of Euphorbia cyparissias L. collected by T.
+            Dürbye</dc:description>
+
+        <dc:creator>T. Dürbye</dc:creator>
+
+        <dc:created> 15.4.2007</dc:created>
+
+
+
+        <!-- Assertions based on experimental version of Darwin Core -->
+        <dwc:SampleID>http://herbarium.bgbm.org/object/BGT0000287</dwc:SampleID>
+        <dc:modified>Jul 9 2013 04:03:36:107PM</dc:modified>
+        <dwc:BasisOfRecord>Specimen</dwc:BasisOfRecord>
+        <dwc:InstitutionCode>BGBM</dwc:InstitutionCode>
+        <dwc:CollectionCode>B</dwc:CollectionCode>
+        <dwc:CatalogNumber>B GT 0000287</dwc:CatalogNumber>
+        <dwc:ScientificName>Euphorbia cyparissias L.</dwc:ScientificName>
+        <dwc:Family>EUPHORBIACEAE</dwc:Family>
+        <dwc:Genus>Euphorbia</dwc:Genus>
+        <dwc:SpecificEpithet>cyparissias</dwc:SpecificEpithet>
+        <dwc:HigherGeography>Germany</dwc:HigherGeography>
+
+        <dwc:Country>DE</dwc:Country>
+
+
+
+
+        <dwc:Locality>Germany: Brandenburg. Kreis Märkisch-Oderland, N Lebus, Oderdamm (Radweg).
+            Trockenrasen. 15.4.2007, Leg.: T. Dürbye DÜR 3467.</dwc:Locality>
+
+
+
+
+        <dwc:EarliestDateCollected> 15.4.2007</dwc:EarliestDateCollected>
+
+        <dwc:Collector>T. Dürbye</dwc:Collector>
+        <dwc:associatedMedia/>
+
+
+    </rdf:Description>
+
+</rdf:RDF>

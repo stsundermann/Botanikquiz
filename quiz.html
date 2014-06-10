@@ -1,0 +1,63 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/sticky-footer.css" rel="stylesheet"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="js/bootstrap.min.js"></script></head>
+   <body role="document">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+         <div class="container">
+            <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#">Farnquiz</a></div>
+            <div class="navbar-collapse collapse"></div>
+         </div>
+      </div>
+      <div class="container theme-showcase" role="main">
+         <div class="jumbotron">
+            <h1>Rate den Pflanzennamen!</h1>
+            <p>Benutzt Daten des Botanischen Museums.</p>
+         </div>
+         <div class="page-header">
+            <h1>Bild</h1>
+         </div>
+         <div class="row">
+            <div class="col-sm-4" style="width:30%; height: 30%;"><img class="img-thumbnail" src="http://ww2.bgbm.org/herbarium/images/B/20/00/49/84/b_20_0049849.jpg"></div>
+            <div class="col-sm-8">
+               <p><button type="button" class="btn btn-lg btn-default" style="min-width: 425px; margin-bottom: 25px;" data-toggle="modal" data-target="#failModal">Cyperus tacnensis Nees &amp; Meyen var. tacnensis</button><br><button type="button" class="btn btn-lg btn-default" style="min-width: 425px; margin-bottom: 25px;" data-toggle="modal" data-target="#successModal">Diplazium tamandarei Rosenst.</button><br><button type="button" class="btn btn-lg btn-default" style="min-width: 425px; margin-bottom: 25px;" data-toggle="modal" data-target="#failModal">Loranthus tubulosus Willd.</button><br><button type="button" class="btn btn-lg btn-default" style="min-width: 425px; margin-bottom: 25px;" data-toggle="modal" data-target="#failModal">Phyllanthus niruri L.</button><br></p>
+            </div>
+         </div>
+      </div>
+      <div id="footer">
+         <div class="container">
+            <p class="text-muted">© 2014 Farnquiz</p>
+         </div>
+      </div>
+      <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button><h4 class="modal-title" id="myModalLabel">Antwort</h4>
+               </div>
+               <div class="modal-body">
+                  Richtig
+                  
+               </div>
+               <div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button><a href=""><button type="button" class="btn btn-primary">Nächste Pflanze</button></a></div>
+            </div>
+         </div>
+      </div>
+      <div class="modal fade" id="failModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button><h4 class="modal-title" id="myModalLabel">Antwort</h4>
+               </div>
+               <div class="modal-body">
+                  Falsch
+                  
+               </div>
+               <div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button><a href=""><button type="button" class="btn btn-primary">Nächste Pflanze</button></a></div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

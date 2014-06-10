@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tap="http://rs.tdwg.org/tapir/1.0"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:hyam="http://hyam.net/tapir2sw#"
+        xmlns:dwc="http://rs.tdwg.org/dwc/terms/" xmlns:dwcc="http://rs.tdwg.org/dwc/curatorial/"
+        xmlns:dc="http://purl.org/dc/terms/"
+        xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+    <!--This is metadata about this metadata document-->
+    <rdf:Description
+        rdf:about="http://herbarium.bgbm.org/data/rdf/B200049849">
+        <dc:creator>Simple PHP RDF Script implemented by Felix Hilgerdenaar (BGBM)</dc:creator>
+        <dc:created>2014-06-06T16:05:49+02:00</dc:created>
+    
+            
+    </rdf:Description>
+    
+
+    <!--This is metadata about this specimen-->
+    <rdf:Description rdf:about="http://herbarium.bgbm.org/object/B200049849">
+    
+        <!-- Assertions made in simple Dublin Core -->
+                
+        <dc:title>Diplazium tamandarei Rosenst.</dc:title>
+        
+                <dc:description>A herbarium specimen of Diplazium tamandarei Rosenst. collected by A. C. Brade &amp; F. Tamandaré de Toledo Jr.</dc:description>
+        
+		 <dc:creator>A. C. Brade &amp; F. Tamandaré de Toledo Jr.</dc:creator>
+                
+                    <dc:created>06.1913</dc:created>
+                
+        
+                
+        <!-- Assertions based on experimental version of Darwin Core -->
+        <dwc:SampleID>http://herbarium.bgbm.org/object/B200049849</dwc:SampleID>
+        <dc:modified>Sep 22 2011 10:35:53:980AM</dc:modified>
+        <dwc:BasisOfRecord>Specimen</dwc:BasisOfRecord>
+        <dwc:InstitutionCode>BGBM</dwc:InstitutionCode>
+        <dwc:CollectionCode>B</dwc:CollectionCode>
+        <dwc:CatalogNumber>B 20 0049849</dwc:CatalogNumber>
+        <dwc:ScientificName>Diplazium tamandarei Rosenst.</dwc:ScientificName>
+        <dwc:Family>POLYPODIACEAE</dwc:Family>
+        <dwc:Genus>Diplazium</dwc:Genus>
+        <dwc:SpecificEpithet>tamandarei</dwc:SpecificEpithet>
+        <dwc:HigherGeography>Brazil</dwc:HigherGeography>
+
+            <dwc:Country>BR</dwc:Country>
+        
+            
+            
+            
+            <dwc:Locality>Brazil: S.Paulo; Sierra do Cantareira. 06.1913, Leg.: A. C. Brade &amp; F. Tamandaré de Toledo Jr. 6529.</dwc:Locality>
+            
+           
+        
+        
+            <dwc:EarliestDateCollected>06.1913</dwc:EarliestDateCollected>
+        
+            <dwc:Collector>A. C. Brade &amp; F. Tamandaré de Toledo Jr.</dwc:Collector>
+		<dwc:associatedMedia>http://ww2.bgbm.org/herbarium/images/B/20/00/49/84/b_20_0049849.jpg</dwc:associatedMedia>
+          
+            
+    </rdf:Description>
+    
+</rdf:RDF>    
+   
+
+    
+    
