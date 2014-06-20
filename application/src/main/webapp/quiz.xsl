@@ -7,6 +7,7 @@
     exclude-result-prefixes="xs rdf geo dc dwcc dwc" version="2.0">
 
     <xsl:param name="selectedNum"/>
+    <xsl:param name="imageLink"/>
 
     <xsl:param name="doc1"/>
     <xsl:param name="doc2"/>
@@ -64,24 +65,9 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-4" style="width:30%; height: 30%;">
-                            <xsl:choose>
-                                <xsl:when test="$selectedNum=1">
-                                    <xsl:apply-templates select="$doc1/rdf:RDF/rdf:Description/dwc:associatedMedia"
-                                    />
-                                </xsl:when>
-                                <xsl:when test="$selectedNum=2">
-                                    <xsl:apply-templates select="$doc2/rdf:RDF/rdf:Description/dwc:associatedMedia"
-                                    />
-                                </xsl:when>
-                                <xsl:when test="$selectedNum=3">
-                                    <xsl:apply-templates select="$doc3/rdf:RDF/rdf:Description/dwc:associatedMedia"
-                                    />
-                                </xsl:when>
-                                <xsl:when test="$selectedNum=4">
-                                    <xsl:apply-templates select="$doc4/rdf:RDF/rdf:Description/dwc:associatedMedia"
-                                    />
-                                </xsl:when>
-                            </xsl:choose>
+                            <img class="img-thumbnail">
+                                <xsl:attribute name="src" select="$imageLink"/>
+                            </img>
                         </div>
                         <div class="col-sm-8">
                             <p>
@@ -175,12 +161,5 @@
             <xsl:value-of select="."/>
         </button><br/>
     </xsl:template>
-
-    <xsl:template match="dwc:associatedMedia">
-        <img class="img-thumbnail">
-            <xsl:attribute name="src" select="."/>
-        </img>
-    </xsl:template>
-
     <xsl:template match="*|node()"/>
 </xsl:stylesheet>
