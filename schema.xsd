@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+  <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://rs.tdwg.org/dwc/terms/" schemaLocation="dwc.xsd"/>
+  <xs:element name="RDF">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="rdf:Description"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Description">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="dc:title"/>
+          <xs:element ref="dc:description"/>
+        </xs:sequence>
+        <xs:element ref="dc:creator"/>
+        <xs:element ref="dc:created"/>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="dwc:SampleID"/>
+          <xs:element ref="dc:modified"/>
+          <xs:element ref="dwc:BasisOfRecord"/>
+          <xs:element ref="dwc:InstitutionCode"/>
+          <xs:element ref="dwc:CollectionCode"/>
+          <xs:element ref="dwc:CatalogNumber"/>
+          <xs:element ref="dwc:ScientificName"/>
+          <xs:element ref="dwc:Family"/>
+          <xs:element ref="dwc:Genus"/>
+          <xs:element ref="dwc:SpecificEpithet"/>
+          <xs:element ref="dwc:HigherGeography"/>
+          <xs:element ref="dwc:Country"/>
+          <xs:element ref="dwc:Locality"/>
+          <xs:element ref="dwc:EarliestDateCollected"/>
+          <xs:element ref="dwc:Collector"/>
+          <xs:element ref="dwc:associatedMedia"/>
+        </xs:sequence>
+      </xs:sequence>
+      <xs:attribute name="about" use="required" form="qualified" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

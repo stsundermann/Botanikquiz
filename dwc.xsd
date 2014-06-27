@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://rs.tdwg.org/dwc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/terms/" xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+  <xs:import namespace="http://purl.org/dc/terms/" schemaLocation="dc.xsd"/>
+  <xs:import namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" schemaLocation="schema.xsd"/>
+  <xs:element name="SampleID" type="xs:anyURI"/>
+  <xs:element name="BasisOfRecord" type="xs:NCName"/>
+  <xs:element name="InstitutionCode" type="xs:NCName"/>
+  <xs:element name="CollectionCode" type="xs:NCName"/>
+  <xs:element name="CatalogNumber" type="xs:string"/>
+  <xs:element name="ScientificName" type="xs:string"/>
+  <xs:element name="Family" type="xs:NCName"/>
+  <xs:element name="Genus" type="xs:NCName"/>
+  <xs:element name="SpecificEpithet" type="xs:NCName"/>
+  <xs:element name="HigherGeography" type="xs:string"/>
+  <xs:element name="Country" type="xs:string"/>
+  <xs:element name="Locality" type="xs:string"/>
+  <xs:element name="EarliestDateCollected" type="xs:string"/>
+  <xs:element name="Collector" type="xs:string"/>
+  <xs:element name="associatedMedia" type="xs:anyURI"/>
+</xs:schema>
